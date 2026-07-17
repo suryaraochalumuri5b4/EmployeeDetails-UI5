@@ -1,0 +1,18 @@
+{
+    "empStr":[{
+               "empID": "E12345",
+                "empName": "John Doe",
+                "empDept": "Engineering",
+                "empSalary": 75000,
+                "grady": "false"
+             },
+             {
+               "empID": "E12346",
+                "empName": "John",
+                "empDept": "Civil",
+                "empSalary": 5000,
+                "grady": "false"
+             }
+            ]
+
+}

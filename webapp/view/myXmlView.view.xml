@@ -1,0 +1,75 @@
+<mvc:View xmlns:form="sap.ui.layout.form" controllerName="chip.controller.myXmlView" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:t="sap.ui.table">
+
+<!-- <Input placeholder="Enter your name" id="idText" enabled="true" />
+<Button text="Press Me" press="onPress" id="idButton" icon="sap-icon://action"/> -->
+<t:Table rows="{/empTab}" alternateRowColors="true" visibleRowCount="5" selectionMode="Single" rowSelectionChange="onRowSelect">
+ <t:columns>
+  <t:Column >
+    <t:label>
+      <Label text="EmpID"></Label>
+    </t:label>
+    <t:template>
+    <Text text="{empID}"></Text>
+    </t:template>
+  </t:Column>
+   <t:Column >
+    <t:label>
+      <Label text="EmpName"></Label>
+    </t:label>
+     <t:template>
+    <Text text="{empName}"></Text>
+    </t:template>
+  </t:Column>
+   <t:Column >
+    <t:label>
+      <Label text="EmpDept"></Label>
+    </t:label>
+     <t:template>
+    <Text text="{empDept}"></Text>
+    </t:template>
+  </t:Column>
+   <t:Column >
+    <t:label>
+      <Label text="EmpSalary"></Label>
+    </t:label>
+     <t:template>
+    <Text text="{empSalary}  {currency}"></Text>
+    </t:template>
+  </t:Column>
+  <t:Column >
+    <t:label>
+      <Label text="Gender"></Label>
+    </t:label>
+     <t:template>
+     <Image src="{gender}" width="20px" height="20px"/>
+    </t:template>
+  </t:Column>
+  <t:Column >
+    <t:label>
+      <Label text="Rating"></Label>
+    </t:label>
+     <t:template>
+    <RatingIndicator displayOnly="true" value="{rating}" />
+    </t:template>
+  </t:Column>
+ </t:columns>
+</t:Table>
+<form:SimpleForm title="Employee Details" id="idSimple">
+ <form:content>
+   <Label text="EmpID"></Label>
+   <Input id="idEmpID" width="150px" value="{empID}"></Input>
+   <Label text="EmpName" ></Label>
+   <Input id="idEmpName" width="150px" value="{empName}"></Input>
+   <Label text="EmpSalary"></Label>
+    <Input id="idEmpSalary" width="150px"  value="{empSalary}" ></Input>
+    <Label text="EmpDept"></Label>
+    <Input id="idEmpDept" width="150px"  value="{empDept}"></Input>
+    <Label ></Label>
+    <Button text="Reload" press="onReload" width="80px"></Button>
+
+ </form:content>
+
+</form:SimpleForm>
+
+</mvc:View>
+    

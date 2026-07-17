@@ -1,0 +1,86 @@
+{
+    "empTab":[
+              {
+               "empID": "E0001",
+                "empName": "John Doe",
+                "empDept": "Engineering",
+                "empSalary": 75000,
+                "grady": "false",
+                  "currency": "USD",
+                  "gender":"https://cdn-icons-png.magnific.com/256/6997/6997484.png",
+                  "rating":5
+             },
+             {
+               "empID": "E0002",
+                "empName": "Surya",
+                "empDept": "IT",
+                "empSalary": 60000,
+                "grady": "false",
+                "currency": "EURO",
+                "gender":"https://cdn-icons-png.magnific.com/256/6997/6997484.png",
+                 "rating":3
+             },
+             {
+               "empID": "E0003",
+                "empName": "Ravi",
+                "empDept": "Mech",
+                "empSalary": 50000,
+                "grady": "false",
+                "currency": "INR",
+                "gender":"https://cdn-icons-png.magnific.com/256/6997/6997484.png",
+                 "rating":2
+             },
+             {
+               "empID": "E0004",
+                "empName": "Pradeep",
+                "empDept": "Civil",
+                "empSalary": 75000,
+                "grady": "True",
+                "currency": "KWD",
+                "gender":"https://cdn-icons-png.magnific.com/256/6997/6997484.png",
+                 "rating":4
+             },
+             {
+               "empID": "E0005",
+                "empName": "Mridul",
+                "empDept": "Insurance",
+                "empSalary": 85000,
+                "grady": "false",
+                "currency": "EURO",
+                "gender":"https://cdn-icons-png.magnific.com/256/6997/6997484.png",
+                 "rating":5
+             },
+             {
+               "empID": "E0006",
+                "empName": "Julija",
+                "empDept": "Engineering",
+                "empSalary": 35000,
+                "grady": "false",
+                "currency": "EURO",
+                "gender":"https://cdn-icons-png.magnific.com/512/6833/6833605.png",
+                 "rating":3
+             },
+             {
+               "empID": "E0007",
+                "empName": "Meghana",
+                "empDept": "Engineering",
+                "empSalary": 95000,
+                "grady": "false",
+                "currency": "INR",
+                "gender":"https://cdn-icons-png.magnific.com/512/6833/6833605.png",
+                 "rating":1
+             },
+             {
+               "empID": "E0008",
+                "empName": "Donald Doe",
+                "empDept": "Non-IT",
+                "empSalary": 45000,
+                "grady": "false",
+                "currency": "USD",
+                "gender":"https://cdn-icons-png.magnific.com/256/6997/6997484.png",
+                 "rating":4
+             }
+
+    ]
+
+}
