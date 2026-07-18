@@ -17,7 +17,9 @@
       <Label text="{i18n>XLBL_EMPNAME}"></Label>
     </t:label>
      <t:template>
-    <Text text="{empName}"></Text>
+    <Text text="{parts:[{path:'empName'}],
+                 formatter:'.myFormatter.formatEmpName'}">
+    </Text>
     </t:template>
   </t:Column>
    <t:Column >
@@ -33,7 +35,9 @@
       <Label text="{i18n>XLBL_EMPSALARY}"></Label>
     </t:label>
      <t:template>
-    <Text text="{empSalary}  {currency}"></Text>
+     <Text text="{parts:[{path:'empSalary'},{path:'currency'}],
+                 formatter:'.myFormatter.formatCurrency'}">
+    </Text>
     </t:template>
   </t:Column>
   <t:Column >

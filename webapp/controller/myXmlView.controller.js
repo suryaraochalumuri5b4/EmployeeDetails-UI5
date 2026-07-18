@@ -1,7 +1,10 @@
-sap.ui.define(['sap/ui/core/mvc/Controller', 'chip/model/empModel'],function(Controller, empModel) {
+sap.ui.define(['sap/ui/core/mvc/Controller',
+     'chip/model/empModel',
+     'chip/util/formates'
+    ],function(Controller, empModel,formatter) {
 
     return Controller.extend("chip.controller.myXmlView", {
-
+        myFormatter:formatter,
         onInit: function() {
             console.log("myXmlView Controller initialized");
             var oModel = empModel.createEmpModel();
@@ -23,6 +26,7 @@ sap.ui.define(['sap/ui/core/mvc/Controller', 'chip/model/empModel'],function(Con
              oSimpleForm.bindElement(oPath);
 
         },
+        
         onReload:function(){
             alert("Button clicked!");
              var oSalary = this.getView().byId("idEmpSalary");
