@@ -48,6 +48,17 @@
      <Image src="{gender}" width="20px" height="20px"/>
     </t:template>
   </t:Column>
+   <t:Column >
+    <t:label>
+      <Label text="{i18n>XLBL_EMPDOB}"></Label>
+    </t:label>
+     <t:template>
+      <Text text="{
+            path: 'empDob',
+            formatter: '.myFormatter.formatDate'
+        }" />
+    </t:template>
+  </t:Column>
   <t:Column >
     <t:label>
       <Label text="{i18n>XLBL_RATING}"></Label>
