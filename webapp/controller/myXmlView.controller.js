@@ -10,6 +10,9 @@ sap.ui.define(['sap/ui/core/mvc/Controller', 'chip/model/empModel'],function(Con
             // var oDept = this.getView().byId("idEmpDept");
             // oDept.bindValue("/empStr/0/empDept");
              this.getView().setModel(oModel);
+
+             var oModelResource = empModel.createResourceModel();
+             this.getView().setModel(oModelResource,"i18n");
         },
            onRowSelect:function(oEvent){
             console.log("oEvent....",oEvent);

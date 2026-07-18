@@ -1,4 +1,4 @@
-<mvc:View xmlns:form="sap.ui.layout.form" controllerName="chip.controller.myXmlView" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:t="sap.ui.table">
+<mvc:View xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form" controllerName="chip.controller.myXmlView" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:t="sap.ui.table">
 
 <!-- <Input placeholder="Enter your name" id="idText" enabled="true" />
 <Button text="Press Me" press="onPress" id="idButton" icon="sap-icon://action"/> -->
@@ -6,7 +6,7 @@
  <t:columns>
   <t:Column >
     <t:label>
-      <Label text="EmpID"></Label>
+      <Label text="{i18n>XLBL_EMPID}"></Label>
     </t:label>
     <t:template>
     <Text text="{empID}"></Text>
@@ -14,7 +14,7 @@
   </t:Column>
    <t:Column >
     <t:label>
-      <Label text="EmpName"></Label>
+      <Label text="{i18n>XLBL_EMPNAME}"></Label>
     </t:label>
      <t:template>
     <Text text="{empName}"></Text>
@@ -22,7 +22,7 @@
   </t:Column>
    <t:Column >
     <t:label>
-      <Label text="EmpDept"></Label>
+      <Label text="{i18n>XLBL_EMPDEPT}"></Label>
     </t:label>
      <t:template>
     <Text text="{empDept}"></Text>
@@ -30,7 +30,7 @@
   </t:Column>
    <t:Column >
     <t:label>
-      <Label text="EmpSalary"></Label>
+      <Label text="{i18n>XLBL_EMPSALARY}"></Label>
     </t:label>
      <t:template>
     <Text text="{empSalary}  {currency}"></Text>
@@ -38,7 +38,7 @@
   </t:Column>
   <t:Column >
     <t:label>
-      <Label text="Gender"></Label>
+      <Label text="{i18n>XLBL_GENDER}"></Label>
     </t:label>
      <t:template>
      <Image src="{gender}" width="20px" height="20px"/>
@@ -46,23 +46,27 @@
   </t:Column>
   <t:Column >
     <t:label>
-      <Label text="Rating"></Label>
+      <Label text="{i18n>XLBL_RATING}"></Label>
     </t:label>
      <t:template>
-    <RatingIndicator displayOnly="true" value="{rating}" />
+    <RatingIndicator displayOnly="true" value="{rating}"  />
     </t:template>
   </t:Column>
  </t:columns>
 </t:Table>
-<form:SimpleForm title="Employee Details" id="idSimple">
+<VBox justifyContent="Center" width="100%">
+<form:SimpleForm  id="idSimple" layout="ResponsiveLayout" >
+ <form:title>
+   <core:Title text=" {i18n>XLBL_EMPTITLE}" icon="sap-icon://customer"></core:Title>
+ </form:title>
  <form:content>
-   <Label text="EmpID"></Label>
+   <Label text="{i18n>XLBL_EMPID}" textAlign="Right"></Label>
    <Input id="idEmpID" width="150px" value="{empID}"></Input>
-   <Label text="EmpName" ></Label>
+   <Label text="{i18n>XLBL_EMPNAME}" ></Label>
    <Input id="idEmpName" width="150px" value="{empName}"></Input>
-   <Label text="EmpSalary"></Label>
+   <Label text="{i18n>XLBL_EMPSALARY}"></Label>
     <Input id="idEmpSalary" width="150px"  value="{empSalary}" ></Input>
-    <Label text="EmpDept"></Label>
+    <Label text="{i18n>XLBL_EMPDEPT}"></Label>
     <Input id="idEmpDept" width="150px"  value="{empDept}"></Input>
     <Label ></Label>
     <Button text="Reload" press="onReload" width="80px"></Button>
@@ -70,6 +74,8 @@
  </form:content>
 
 </form:SimpleForm>
+</VBox>
+
 
 </mvc:View>
     
